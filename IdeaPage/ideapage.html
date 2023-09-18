@@ -16,6 +16,16 @@
         margin: 0px;
       }
 
+      ul {
+        list-style: none;
+        margin-left: 10px;
+        padding: 0;
+     }
+            
+      li{
+        margin-left:18.75px;
+      }
+
       body {
         width: 100%;
         margin-left: 0px;
@@ -26,14 +36,31 @@
       .header {
         height: 70px;
         width: 100%;
-        margin:-8px;
         border-bottom: 10px solid white;
+        margin:-8px;
+      }
+
+      .idea {
+        height: 50px;
+        width: 100%;
+        display: flex; vertical-align: middle;
       }
 
       .icon {
         padding: -3px 1rem;
         margin-right: 10px;
         height: 70px;
+      }
+
+      .ideaIcon {
+        float:left;
+        height:50px;
+        margin-right:18.75px;
+      }
+
+      .ideaLabel {
+        font-family: ui-sans-serif, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 1em;
       }
     </style>
   </head>
@@ -45,6 +72,13 @@
       <div style="display: flex; vertical-align: middle; height: 70px; line-height: 70px; float: left;">
         <h2>Research Ideas</h2>
       </div>
+    </div>
+
+    <div class="container">
+      <ul class="idealist">
+        <li><a><div class="idea"><img class="ideaIcon" img src='ideacat1.png' onmouseover="this.src='ideacat2.png';" onmouseout="this.src='ideacat1.png';" /><p class="ideaLabel">Sample Idea!</p></div></a></li>
+
+      </ul>
     </div>
   </body>
 </html>
