@@ -45,15 +45,17 @@
         height: 70px;
       }
 
-      .ideaIcon {
+      div.ideaIcon {
         user-select: none;
         transition: background 20ms ease-in 0s;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 24px;
         border-radius: 0.25em;
-        flex-shrink: 0;
+      }
+
+      img.ideaIcon {
+        width: 24px;
       }
 
       .ideaLabel {
@@ -64,7 +66,7 @@
       div.ideadesc {
         max-width: 100%;
         width: 100%;
-        display:inline-block;
+        display:block;
         white-space: pre-wrap;
         word-break: break-word;
         caret-color: rgb(55, 53, 47);
@@ -76,6 +78,7 @@
       p.ideadesc {
         font-family: ui-sans-serif, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
         font-size: 16px;
+        word-break: break-word;
       }
 
       .container {
@@ -83,7 +86,7 @@
         width:100%;
         border-radius: 3px;
         background: rgb(253, 235, 236);
-        padding: 16px 16px 16px 12px;
+        padding: 0px 16px 16px 12px;
       }
     </style>
   </head>
